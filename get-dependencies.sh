@@ -7,7 +7,9 @@ case "$ARCH" in # they use AMD64 and ARM64 for the deb links
 	x86_64)  deb_arch=amd64;;
 	aarch64) deb_arch=arm64;;
 esac
-DEB_LINK="https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.13-beta/freetube_0.23.13_beta_$deb_arch.deb"
+#DEB_LINK="https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.13-beta/freetube_0.23.13_beta_$deb_arch.deb"
+DEB_LINK=$(curl -s https://api.github.com grep "browser_download_url.*$deb_arch.deb" | cut -d '"' -f 4)
+wget -q --show-progress "$DEB_LINK" -O "freetube_latest_$deb_arch.deb"
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
