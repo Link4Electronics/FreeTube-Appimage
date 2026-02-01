@@ -37,7 +37,7 @@ fi
 ar xvf /tmp/app.deb
 tar -xvf ./data.tar.gz
 rm -f ./*.gz
-rm -rf ./usr/doc
+rm -rf ./usr/share/doc
 mv -v ./usr ./AppDir
 mv -v ./opt ./AppDir/lib
 mkdir ./AppDir/bin
