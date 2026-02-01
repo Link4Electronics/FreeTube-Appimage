@@ -16,7 +16,7 @@ export DEPLOY_PIPEWIRE=1
 
 # Deploy dependencies
 #quick-sharun /usr/bin/freetube
-quick-sharun ./AppDir/bin/*⁩
+quick-sharun ./AppDir/bin/*
 
 # Additional changes can be done in between here
 
