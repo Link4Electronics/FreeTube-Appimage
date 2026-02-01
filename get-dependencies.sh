@@ -50,9 +50,6 @@ rm -f ./*.xz
 rm -rf ./usr/share/doc
 mv -v ./usr ./AppDir
 mv -v ./opt/FreeTube ./AppDir/bin
-#mv -v ./opt ./AppDir/lib
-#mkdir -p ./AppDir/bin
-#ln -s ./AppDir/lib/Freetube/freetube ./AppDir/bin/freetube
 cp -v ./AppDir/share/applications/freetube.desktop            ./AppDir
 cp -v ./AppDir/share/icons/hicolor/scalable/apps/freetube.svg  ./AppDir/.DirIcon
 cp -v ./AppDir/share/icons/hicolor/scalable/apps/freetube.svg  ./AppDir
